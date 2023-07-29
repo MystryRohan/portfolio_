@@ -21,7 +21,7 @@ const Home = () => {
         </motion.h1>
         <TypeWriter
           options={{
-            strings: ["A Developer", "A Designer", "A Creater"],
+            strings: ["A Developer", "A Designer", "A Creator"],
             autoStart: true,
             loop: true,
             wrapperClassName: "typewriterpara",
