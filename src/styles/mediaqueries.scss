@@ -1,0 +1,210 @@
+@media screen and (max-width: 1260px) {
+  .home {
+    > section > h1 {
+      font: 800 3rem $text2;
+      letter-spacing: 2px;
+    }
+
+    > p {
+      font: 900 2rem $text1;
+      color: $first;
+    }
+    > span {
+      font: 500 1rem $text1;
+      color: $first;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav {
+    padding: 0 2rem;
+    > div {
+      width: 50%;
+    }
+  }
+  .home {
+    padding-top: 10vh;
+    flex-direction: column-reverse;
+    justify-content: center;
+    > h1 {
+      font: 900 3.5rem $text2;
+    }
+    > section {
+      &:first-of-type {
+        margin-top: 0;
+        height: 45vh;
+        text-align: center;
+        align-items: center;
+      }
+      &:last-of-type {
+        height: 45vh;
+      }
+      > div {
+        &:last-of-type {
+          margin: 1rem 0 0 0;
+        }
+        display: flex;
+        flex-direction: column;
+        > div > a {
+          &:first-of-type {
+            padding: 1.5rem 4.5rem;
+          }
+        }
+        > article {
+          padding: 1rem;
+          align-self: center;
+        }
+      }
+    }
+  }
+  .work {
+    padding: 0 2rem;
+    padding-top: 10vh;
+  }
+  .carousel {
+    > aside {
+      display: flex;
+      padding: 1rem;
+      height: 40vh;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      > div {
+        > h3 {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .techstack {
+    padding: 10vh 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header {
+    > h1 {
+      letter-spacing: 3px;
+      font-size: 3rem;
+    }
+    > p {
+      letter-spacing: 1px;
+      font-size: 1rem;
+    }
+  }
+  .nav {
+    > h1 {
+      font-size: 2rem;
+    }
+    > div {
+      display: none;
+    }
+    > button {
+      display: block;
+    }
+  }
+  .home {
+    padding: 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+    > section {
+      &:first-of-type {
+        margin-top: 0;
+        height: 45vh;
+        text-align: center;
+        align-items: center;
+        // margin: 1rem 0 0 0;
+      }
+      &:last-of-type {
+        justify-content: center;
+        &::after {
+          width: 30vmax;
+          height: 30vmax;
+        }
+        height: 45vh;
+        > img {
+          width: 30vmax;
+          height: 30vmax;
+        }
+      }
+      > h1 {
+        font: 700 2rem $text2;
+      }
+      > div {
+        &:last-of-type {
+          margin: 0;
+          // background-color: red;
+        }
+
+        display: flex;
+        flex-direction: column;
+        > div > a {
+          &:first-of-type {
+            padding: 1rem 2.5rem;
+          }
+        }
+        > article {
+          margin: 1rem 0;
+          padding: 0.5rem;
+          align-self: center;
+          &::after {
+            height: 5rem;
+            top: 15%;
+            left: 15%;
+          }
+          > p {
+            font: 800 1.5rem $text1;
+            color: $first;
+          }
+        }
+      }
+    }
+  }
+  .typewriterpara {
+    font-size: 1.2rem;
+    font-weight: 300;
+    height: 1.5rem;
+  }
+  .work {
+    padding: 0 1rem;
+    padding-top: 10vh;
+    > div {
+      width: 100%;
+    }
+  }
+  .carousel {
+    > aside {
+      height: 40vh;
+      > div {
+        > h3 {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  .techstack {
+    > section {
+      padding-top: 10vh;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0;
+      > div {
+        height: 7rem;
+        width: fit-content;
+      }
+    }
+  }
+  footer {
+    > div {
+      &:first-of-type {
+        display: none;
+      }
+    }
+    flex-direction: column-reverse;
+    > p {
+      align-self: center;
+    }
+  }
+}

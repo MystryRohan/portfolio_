@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins&family=Roboto:ital,wght@0,100;0,400;0,900;1,900&display=swap");
+$first: #001c30;
+$first_d: #00233c;
+$second: #176b87;
+$third: #64ccc5;
+$fourth: #dafffb;
+$fifth: #fed839;
+$sixth: #d61c4e;
+$text1: "Roboto";
+$text2: "Poppins";
+$text3: "Fasthand";
+
+@import "header";
+@import "navbar";
+@import "home";
+@import "work";
+@import "techstack";
+@import "footer";
+@import "mediaqueries";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: $text1;
+  scroll-behavior: smooth;
+}

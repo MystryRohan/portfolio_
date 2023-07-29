@@ -1,0 +1,103 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  padding: 0 8rem;
+  color: $first;
+
+  > section {
+    width: 100%;
+    &:first-of-type {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow-x: hidden;
+      height: 90vh;
+      margin-top: 10vh;
+    }
+
+    &:last-of-type {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      overflow-x: hidden;
+      &::after {
+        content: "";
+        width: 40vmax;
+        height: 40vmax;
+        background-color: $first;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -1;
+      }
+      > img {
+        height: 40vmax;
+        width: 40vmax;
+        object-fit: contain;
+        filter: drop-shadow(5px 0px 7px #fff);
+      }
+    }
+    > h1 {
+      font: 900 4rem $text2;
+      letter-spacing: 2px;
+    }
+    > div {
+      margin: 1rem 0;
+      > div {
+        display: flex;
+        gap: 2rem;
+        > a {
+          &:first-of-type {
+            background-color: $first;
+            padding: 1rem 2.5rem;
+            color: white;
+            transition: all 0.3s;
+            &:hover {
+              background-color: $first_d;
+            }
+          }
+          &:last-of-type {
+            display: flex;
+            align-items: center;
+            font: 500 1.1rem $text2;
+            color: $first;
+            &:hover {
+              color: $sixth;
+            }
+          }
+        }
+      }
+      > article {
+        margin: 2rem 0;
+        color: $third;
+        position: relative;
+        width: 10rem;
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: $fourth;
+          width: 100%;
+          height: 5rem;
+          top: 10%;
+          left: 10%;
+          z-index: -1;
+          border-radius: 50px;
+        }
+        > p {
+          font: 900 2rem $text1;
+          color: $first;
+        }
+        > span {
+          font: 500 1rem $text1;
+          color: $first;
+        }
+      }
+    }
+  }
+}
+.typewriterpara {
+  font-size: 2rem;
+  height: 2rem;
+}
